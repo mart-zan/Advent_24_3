@@ -17,8 +17,15 @@ if __name__ == '__main__':
     # Read and close file
     instructions = read_instructions("input.txt")
 
-    # Regular expression to extract two nubers
+    # Regular expression to extract two numbers
     pattern = r"mul\((\d+),(\d+)\)"
-    matches = re.findall(pattern, instructions)
+    numbers_list = re.findall(pattern, instructions)
 
+    sum_mul = 0
 
+    # Inititalization
+    for numbers in numbers_list:
+        num1, num2 = numbers
+        sum_mul += int(num1) * int(num2)
+
+    print("Final sum is " + str(sum_mul))
