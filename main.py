@@ -58,6 +58,3 @@ if __name__ == '__main__':
 
     print("Final sum with do and dont is " + str(sum_mul))
 
-    # numbers_idx = re.finditer(pattern_mul, instructions)
-    # do_idx = re.finditer(pattern_do, instructions)
-    # dont_idx = re.finditer(pattern_dont, instructions)
